@@ -10,6 +10,7 @@ git apply $LOVELY_PATH/crates/liblovely/luajit.patch
 
 mkdir tmpbuild
 
+rm src/liblovely*.a
 ln -s "$LOVELY_PATH/target/aarch64-apple-ios/release/liblovely.a" src/liblovely-aarch64-apple-ios.a
 ln -s "$LOVELY_PATH/target/aarch64-apple-ios-sim/release/liblovely.a" src/liblovely-aarch64-apple-ios-sim.a
 ln -s "$LOVELY_PATH/target/x86_64-apple-ios/release/liblovely.a" src/liblovely-x86_64-apple-ios.a
